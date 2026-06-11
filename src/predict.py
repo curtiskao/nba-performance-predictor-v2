@@ -132,7 +132,8 @@ def predict(
     # Sanity-check: print key feature values going into the model.
     sanity_features = [
         "PTS_roll_mean_3", "PTS_roll_mean_5", "PTS_roll_mean_10",
-        "pts_last_5_ewm", "FG_PCT_roll_mean_10", "true_shooting_pct",
+        "pts_last_5_ewm", "FGA_roll_mean_3", "FGA_roll_mean_10",
+        "FG_PCT_roll_mean_10", "true_shooting_pct",
         "is_playoffs", "home_away_enc", "opp_def_rating", "opp_pts_allowed_last10",
     ]
     print("\n  Feature values at prediction time:")

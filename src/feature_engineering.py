@@ -21,7 +21,7 @@ def _check(df: pd.DataFrame, cols: list[str], fn: str) -> None:
 
 def add_rolling_features(df: pd.DataFrame) -> pd.DataFrame:
     _check(df, ["PTS"], "add_rolling_features")
-    stat_cols = ["PTS", "REB", "AST", "FG_PCT", "min"]
+    stat_cols = ["PTS", "REB", "AST", "FGA", "FG_PCT", "min"]
     for col in stat_cols:
         if col not in df.columns:
             continue
